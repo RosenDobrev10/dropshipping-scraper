@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <script type="module" src="popup.js"></script>
+    <title>Amazon Scraper</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-wrapper">
+            <img src="assets/logo.svg" alt="amazonScraper">
+        </div>
+        <h1 class="heading">Amazon Scraper</h1>
+
+        <div class="home">
+            <h3>Dropshipping Software System</h3>
+            <p>Our project is part of the SoftUni initiative, providing students with an opportunity to work on a
+                project that closely resembles real-world applications.</p>
+            <ul>
+                <li>Lead by: <a href="https://github.com/DeyanDanailov" target="blank">Deyan Danailov</a></li>
+                <li>Developed by: <a href="https://github.com/TodorYadkov" target="blank">Todor Yadkov</a>, <a
+                        href="https://github.com/RosenDobrev10" target="blank">Rosen Dobrev</a> and <a
+                        href="https://github.com/maximkraychev" target="blank">Maxim Kraychev</a></li>
+            </ul>
+
+        </div>
+
+        <div class="user-info">
+            <p class="server-error-product"></p>
+            <div class="info-container">
+                <p class="email">Email: <span></span></p>
+                <p class="extension-name">Extension Name: <span></span></p>
+            </div>
+            <div class="buttons-container">
+                <button class="btn action">Start</button>
+                <button class="btn logout">Logout</button>
+                <a href="https://github.com/TodorYadkov/dropshipping-scraper" target="blank"
+                    class="btn documentation">Documentation</a>
+            </div>
+        </div>
+
+        <form class="form" method="post">
+
+            <h2>Login</h2>
+            <p class="server-error"></p>
+
+            <div>
+                <label for="email">Email</label>
+                <input id="email" class="email" type="email" name="email" placeholder="Email">
+                <p class="error">Email is not correct</p>
+            </div>
+
+            <div>
+                <label for="extension-name">Extension Name</label>
+                <input id="extension-name" class="extension-name" type="text" name="extensionName"
+                    placeholder="Extension Name">
+                <p class="error">Extension Name is required</p>
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input id="password" class="password" type="password" name="password" placeholder="Password">
+                <p class="error">Invalid password</p>
+            </div>
+
+            <input class="btn submit" type="submit" value="Sign in">
+
+        </form>
+    </div>
+</body>
+
+</html>
